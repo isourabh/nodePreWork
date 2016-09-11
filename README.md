@@ -35,12 +35,11 @@ npm start
 ```bash
 curl -v -X POST http://127.0.0.1:8000 -d "hello self" -H "x-asdf: yodawg"
 * Rebuilt URL to: http://127.0.0.1:8000/
-* Hostname was NOT found in DNS cache
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8000 (#0)
 > POST / HTTP/1.1
-> User-Agent: curl/7.37.1
 > Host: 127.0.0.1:8000
+> User-Agent: curl/7.43.0
 > Accept: */*
 > x-asdf: yodawg
 > Content-Length: 10
@@ -48,18 +47,18 @@ curl -v -X POST http://127.0.0.1:8000 -d "hello self" -H "x-asdf: yodawg"
 >
 * upload completely sent off: 10 out of 10 bytes
 < HTTP/1.1 200 OK
-< user-agent: curl/7.37.1
 < host: 127.0.0.1:8000
+< user-agent: curl/7.43.0
 < accept: */*
 < x-asdf: yodawg
 < content-length: 10
 < content-type: application/x-www-form-urlencoded
-< Date: Mon, 13 Apr 2015 00:45:50 GMT
+< Date: Sun, 11 Sep 2016 14:45:09 GMT
 < Connection: keep-alive
 <
 * Connection #0 to host 127.0.0.1 left intact
 hello self
-```
+````
 
 ### Proxy Server:
 
@@ -67,25 +66,24 @@ Port 8001 will proxy to the echo server on port 8000.
 
 ```bash
 curl -v http://127.0.0.1:8001/asdf -d "hello proxy"
-* Hostname was NOT found in DNS cache
 *   Trying 127.0.0.1...
 * Connected to 127.0.0.1 (127.0.0.1) port 8001 (#0)
 > POST /asdf HTTP/1.1
-> User-Agent: curl/7.37.1
 > Host: 127.0.0.1:8001
+> User-Agent: curl/7.43.0
 > Accept: */*
 > Content-Length: 11
 > Content-Type: application/x-www-form-urlencoded
 >
 * upload completely sent off: 11 out of 11 bytes
 < HTTP/1.1 200 OK
-< user-agent: curl/7.37.1
 < host: 127.0.0.1:8001
+< user-agent: curl/7.43.0
 < accept: */*
 < content-length: 11
 < content-type: application/x-www-form-urlencoded
 < connection: close
-< date: Mon, 13 Apr 2015 02:03:29 GMT
+< date: Sun, 11 Sep 2016 14:46:05 GMT
 <
 * Closing connection 0
 hello proxy
