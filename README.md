@@ -16,7 +16,6 @@ Completed:
 * [] Optional: `-h` argument prints CLI API
 
 Walkthrough Gif:
-[Add walkThrough.gif to the project root]
 
 ![Video Walkthrough](walkThrough.gif)
 
