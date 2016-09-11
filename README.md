@@ -26,6 +26,10 @@ Note: to embed the gif file, just check your gif file into your repo and update 
 
 ```bash
 npm start
+
+OR
+
+node index.js
 ```
 
 ## Features
